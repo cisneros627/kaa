@@ -1,7 +1,7 @@
 
 #considerations the calculations are based on 24FPS
 ##from tkinter import *
-##
+##For the boys?!
 ##
 ##root = Tk()
 ##
@@ -97,6 +97,6 @@ def run_Program():
         duration2 = f"{nh4}:{nm4}:{ns4}:{nf4}"      # # New String to hold our combined duration for this clip
         n.write("," + l + "," + str(my_dict[l]) + "," + duration2 + "\n") #write to file
 
-    n.close() 
+    n.close()
 
 run_Program()
