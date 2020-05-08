@@ -1,7 +1,7 @@
 
 #considerations the calculations are based on 24FPS
 ##from tkinter import *
-##For the boys?!
+##using Python 3.7.6
 ##
 ##root = Tk()
 ##
