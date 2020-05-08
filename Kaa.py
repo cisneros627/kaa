@@ -68,13 +68,13 @@ def run_Program():
             duration = f"{nh3}:{nm3}:{ns3}:{nf3}"   # New String to hold our duration for this clip
 
 
-        if i[0] is '*': # lines that begin with * denote the title of the clip data from above.
-            clip = i[18:-1] # log the clip title then write to the csv file
+        if i[0] is '*':         # lines that begin with * denote the title of the clip data from above.
+            clip = i[18:-1]     # log the clip title then write to the csv file
             n.write(id +"," + clip + "," + num1 + "," + num2 + "," + duration + "," + str(frame_duration) + "\n")
 
             if clip not in tList: # check if we have come accross a clip from the same audio file
 
-                tList.append(clip) # if not we add it to our list
+                tList.append(clip)             # if not we add it to our list
                 my_dict[clip] = frame_duration # store the new clip and duration in list
             else:
                 my_dict[clip] = my_dict[clip] + frame_duration # else we add the current clip length to the total
@@ -82,11 +82,11 @@ def run_Program():
 
 
     for i in range(4):
-        n.write(".\n")  # Make space for total count
+        n.write(".\n")                  # Make space for total count
     n.write(",~~~~~~Totals~~~~~~\n")
     for l in tList:
 
-        h4 = int(my_dict[l] /  86400) ##Rebuild the totals again in hh:mm:ss:ff
+        h4 = int(my_dict[l] /  86400)   #Rebuild the totals again in hh:mm:ss:ff
         m4 = int(my_dict[l] /  1440)
         s4 = int(my_dict[l] / 24)
         f4 = my_dict[l] % 24
