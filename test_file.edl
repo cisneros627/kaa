@@ -33,3 +33,6 @@ FCM: NON-DROP FRAME
 
 011  AX       A2    C        00:02:12:03 00:02:13:04 01:05:01:14 01:05:02:15
 * FROM CLIP NAME: FiredUp_Reprise_InstrumentalMix_11.10.17.wav
+
+012  AX       A     C        01:08:41:11 01:08:45:11 01:05:02:15 01:05:06:15
+* FROM CLIP NAME: K100010404_ZOMBIES-1.mov
