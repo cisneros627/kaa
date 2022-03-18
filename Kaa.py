@@ -1,5 +1,5 @@
 
-#considerations the calculations are based on 24FPS
+#considers the calculations are based on 24FPS
 ##from tkinter import *
 ##using Python 3.7.6
 ##
@@ -24,7 +24,7 @@
 
 def run_Program():
 
-    tList = []  ###List that will check if current clip has bee
+    tList = []  ###List that will check if current clip has been encountered before
     my_dict = {} ###will store name and length of all clips
 
     f = open("test_file.edl","r")   ### opens our edl file
@@ -38,7 +38,7 @@ def run_Program():
 
     n.write("ID, Music Title,clip start,clip end, duration, duration(frames)\n")
 
-    # the for loop below with navigate the file line by line until it hits
+    # the for loop below will navigate the file line by line until it hits
     # a numerical mark where we can parse the
     # header info and then move in to the clip title.
 
